@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bhargav</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <style>
+        body {
+            font-family: 'Figtree', sans-serif;
+            margin: 2rem;
+            background-color: rgb(246, 246, 246);
+        }
+
+        .name {
+            text-decoration-line: underline;
+            text-decoration-color: lightgray;
+            abbr {
+                text-decoration: none;
+            }
+        }
+
+        .namelabel {
+            font-size: .75rem;
+            color: gray;
+            position: relative;
+            top: -1.75rem;
+            font-style: italic;
+        }
+
+        button {
+            border-radius: 0;
+            background-color: black;
+            color: white;
+            border: none;
+            width: 2rem;
+            height: 2rem;
+        }
+
+        a {
+            color: black;
+        }
+
+        h1 {
+            display: flex;
+            flex-wrap: wrap;
+            font-size: 2.5rem;
+        }
+
+        .name-container {
+            max-height: 2rem;
+        }
+
+        @media screen and (max-width: 500px) {
+            .name-container {
+                padding-top: 2rem;
+            }
+            .tagline {
+                padding-top: 1rem;
+            }
+        }
+
+        .lastname {
+            font-weight: 600;
+            text-wrap: nowrap;
+        }
+
+        .tagline {
+            font-style: italic;
+        }
+
+        .styled-link {
+            display: inline-block;
+            padding: 10px 12px;
+            text-decoration: none;
+            color: white;
+            background-color: black;
+            transition: background-color 0.3s;
+        }
+
+        .styled-link:hover {
+            background-color: #191919;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>
+        <span class="name-container">
+            <span class="name">
+                <abbr title="Pronounced BAR-gov">Bhargav</abbr>
+            </span>
+            <br>
+            <span class="namelabel" aria-label="First name">first</span>
+        </span>
+        <span>&nbsp;</span>
+        <span class="name-container">
+            <span class="name lastname">Garre Venkata</span><br>
+            <span class="namelabel" aria-label="Last name">last</span>
+        </span>
+    </h1>
+    <p class="tagline">
+        CS student at the
+        <a href="https://www.virginia.edu/">University of Virginia</a>
+    </p>
+    <a href="https://www.linkedin.com/in/bhargav-gv" class="styled-link" title="LinkedIn"><i
+            class="bi bi-linkedin"></i></a>
+    <a href="https://www.github.com/bgv2" class="styled-link" title="GitHub"><i class="bi bi-github"></i></a>
+    <h2>Projects</h2>
+    <h3>
+        <a href="https://team-gigabyte.github.io">
+            Team Gigabyte
+        </a>
+    </h3>
+    <p>
+        <a href="https://quotobot.js.org">Quotobot</a> – a Discord bot that tells quotes, gets the weather, and more
+    </p>
+    <p>
+        <a href="https://gigmeals.azurewebsites.net">GiG Meals</a> – the best meal planner for diabetics, customized for
+            your preferences
+    </p>
+    <h3>Other</h3>
+    <p>
+        <a href="https://mathgens.github.io">Mathgens</a> – math tools, reference, and problem generators
+</body>
+
+</html>
