@@ -86,17 +86,6 @@
         .styled-link:hover {
             background-color: #191919;
         }
-
-        .sr-only {
-            position: absolute;
-            width: 1px;
-            height: 1px;
-            padding: 0;
-            margin: -1px;
-            overflow: hidden;
-            clip: rect(0, 0, 0, 0);
-            border: 0;
-        }
     </style>
 </head>
 
@@ -107,14 +96,12 @@
                 <abbr title="Pronounced BAR-gov">Bhargav</abbr>
             </span>
             <br>
-            <span class="namelabel" aria-hidden="true">first</span>
-            <span class="sr-only">first name</span>
+            <span class="namelabel" aria-label="First name">first</span>
         </span>
         <span>&nbsp;</span>
         <span class="name-container">
             <span class="name lastname">Garre Venkata</span><br>
-            <span class="namelabel" aria-hidden="true">last</span>
-            <span class="sr-only">last name</span>
+            <span class="namelabel" aria-label="Last name">last</span>
         </span>
     </h1>
     <p class="tagline">
