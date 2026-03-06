@@ -11,12 +11,26 @@
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <style>
+        :root {
+            --bg-color: rgb(246, 246, 246);
+            --text-color: black;
+        }
+        
+        /*dark colors*/
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg-color: #1D1F20;
+                --text-color: white;
+            }
+        }
+        
         body {
             font-family: 'Figtree', sans-serif;
             margin: 2rem;
-            background-color: rgb(246, 246, 246);
+            background-color: var(--bg-color);
+            color: var(--text-color);
         }
-
+        
         .name {
             text-decoration-line: underline;
             text-decoration-color: lightgray;
@@ -43,7 +57,7 @@
         }
 
         a {
-            color: black;
+            color: var(--text-color);
         }
 
         h1 {
@@ -82,13 +96,9 @@
             display: inline-block;
             padding: 10px 12px;
             text-decoration: none;
-            color: white;
-            background-color: black;
+            color: var(--bg-color);
+            background-color: var(--text-color);
             transition: background-color 0.3s;
-        }
-
-        .styled-link:hover {
-            background-color: #191919;
         }
     </style>
 </head>
@@ -160,7 +170,19 @@
     </p>
     <h3>Other</h3>
     <p>
+        <a href="https://github.com/bgv2/clothinglibrary">Clothing Library</a> – peer-to-peer clothing lending web app (Python, Django, HTML/CSS/JS)
+    </p>
+    <p>
         <a href="https://mathgens.github.io">Mathgens</a> – math tools, reference, and problem generators (HTML/CSS/JS, Jekyll)
+    </p>
+    <h2>Misc</h2>
+    <p>
+        Quizbowl (<a href="https://quizbowlstats.com/players/bhargav-garre-venkata">stats 1</a>,
+        <a href="https://www.naqt.com/stats/player/index.jsp?contact_id=663708">2</a>) – DII player for Virginia
+    </p>
+    <p>
+        <a href="https://open.spotify.com/artist/2CqU2nMFGEMcsUZ86d7ZNm">The Testing Page</a> – homemade electronic music (GarageBand, Novation Launchpad)
+    </p>
 </body>
 
 </html>
