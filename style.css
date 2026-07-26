@@ -15,9 +15,10 @@
 }
 
 hr {
-  border: 0;                  /* Removes the default border */
-  height: 2px;
-  background-image: var(--main-gradient);
+    /* Removes the default border */
+    border: 0;
+    height: 2px;
+    background-image: var(--main-gradient);
 }
 
 body {
