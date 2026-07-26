@@ -29,6 +29,7 @@ nav {
     background-color: var(--bg-color);
     z-index: 100;
     border-image: linear-gradient(to right, #fe5024, #fc903c) 1;
+    box-sizing: border-box;
 
 }
 
@@ -90,9 +91,9 @@ nav {
     display: flex;
     align-items: center;
     fill: var(--text-color);
-    margin-right: auto;
     line-height: 0;
     text-decoration: none;
+    margin-right: auto;
 }
 
 .hero {
