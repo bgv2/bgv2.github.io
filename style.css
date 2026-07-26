@@ -23,26 +23,76 @@ body {
 }
 
 nav {
-    display: flex;
+    position: relative;
     width: 100%;
-    justify-content: center;
     border: .25rem solid red;
     background-color: var(--bg-color);
     z-index: 100;
     border-image: linear-gradient(to right, #fe5024, #fc903c) 1;
 
-    a {
-        padding: 1rem;
-    }
+}
 
-    .logo {
-        display: flex;
-        align-items: center;
-        fill: var(--text-color);
-        margin-right: auto;
-        line-height: 0;
-        text-decoration: none;
-    }
+.nav-scroll {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.nav-scroll::-webkit-scrollbar {
+    display: none;
+}
+
+.nav-fade {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 2.5rem;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+    z-index: 2;
+}
+
+.nav-fade-left {
+    left: 0;
+    background: linear-gradient(to right, var(--bg-color), transparent);
+}
+
+.nav-fade-right {
+    right: 0;
+    background: linear-gradient(to left, var(--bg-color), transparent);
+}
+
+.is-scrollable .nav-fade-left,
+.is-scrollable .nav-fade-right {
+    opacity: 1;
+}
+
+.at-start .nav-fade-left {
+    opacity: 0;
+}
+
+.at-end .nav-fade-right {
+    opacity: 0;
+}
+
+.nav-scroll a {
+    padding: 1rem;
+    flex: 0 0 auto;
+}
+
+.nav-scroll .logo {
+    display: flex;
+    align-items: center;
+    fill: var(--text-color);
+    margin-right: auto;
+    line-height: 0;
+    text-decoration: none;
 }
 
 .hero {
