@@ -143,7 +143,27 @@
             href="https://youtube.com/channel/UCUUf9eceSDiIWGcUfbe_A3A">YouTube</a><br>
         (available on most other streaming platforms as well!)
     </p>
+    <hr>
+    <h2>Contact</h2>
+    <p>
+        Interested in collaborating or have questions? Email me at <a id="contact-link" href="#">[email]</a>.
+    </p>
 </body>
+
+<script>
+    (() => {
+        const link = document.getElementById('contact-link');
+        if (!link) {
+            return;
+        }
+
+        const encodedEmail = 'Y29udGFjdEBiaGFyZ2F2Z3YuY29t';
+        const email = atob(encodedEmail);
+
+        link.href = `mailto:${email}`;
+        link.textContent = email;
+    })();
+</script>
 
 <script>
     (() => {
