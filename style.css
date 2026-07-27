@@ -30,6 +30,14 @@ body {
     color: var(--text-color);
 }
 
+p {
+    line-height: 1.5;
+}
+
+li:not(:last-child) {
+  margin-bottom: .5rem;
+}
+
 nav {
     position: relative;
     width: 100%;
