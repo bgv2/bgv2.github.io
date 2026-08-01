@@ -8,7 +8,7 @@
 /* dark colors */
 @media (prefers-color-scheme: dark) {
     :root {
-        --bg-color: #1D1F20;
+        --bg-color: #17191A;
         --text-color: white;
         --name-label-color: lightgray;
     }
